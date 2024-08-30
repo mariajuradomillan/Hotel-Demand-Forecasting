@@ -31,6 +31,7 @@ library(factoextra)
 library(mice)
 library(plotly)
 library(rpart)
+library(gt)
 
 
 ```
@@ -855,7 +856,5 @@ results_table <- gt(results_df) %>%
     locations = cells_column_labels()
   )
 
-# Display the table
 results_table
-
 ```
