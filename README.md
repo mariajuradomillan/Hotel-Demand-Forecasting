@@ -21,12 +21,9 @@ Data can be downloaded from this [link](https://www.sciencedirect.com/science/ar
 ### Required Packages
 
 You can install the required R packages by running the following code:
-
----
 packages <- c( "tidyverse", "dplyr", "readr", "plotly", "caret", "mice", "ggplot2", "gghighlight", "hrbrthemes", "patchwork", "leaflet", "MASS", "xgboost", "GGally", "factoextra", "rpart", "gt") 
  install_if_missing <- function(package) { if (!require(package, character.only = TRUE)) { install.packages(package) library(package, character.only = TRUE) } } 
 lapply(packages, install_if_missing)
----
 
 ## Usage
 
