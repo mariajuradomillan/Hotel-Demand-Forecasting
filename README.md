@@ -24,9 +24,9 @@ You can install the required R packages by running the following code:
 
 ---
 packages <- c( "tidyverse", "dplyr", "readr", "plotly", "caret", "mice", "ggplot2", "gghighlight", "hrbrthemes", "patchwork", "leaflet", "MASS", "xgboost", "GGally", "factoextra", "rpart", "gt") 
-# Install packages if they are not already installed
+## Install packages if they are not already installed
  install_if_missing <- function(package) { if (!require(package, character.only = TRUE)) { install.packages(package) library(package, character.only = TRUE) } } 
-# Apply the function to all listed packages 
+## Apply the function to all listed packages 
 lapply(packages, install_if_missing)
 ---
 
